@@ -28,3 +28,9 @@ pi
 ```shell
 px shadcn-svelte@latest init
 ```
+
+https://lucide.dev/guide/packages/lucide-svelte
+
+```shell
+pi -D lucide-svelte
+```

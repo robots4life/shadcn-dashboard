@@ -31,6 +31,8 @@ px shadcn-svelte@latest init
 
 https://lucide.dev/guide/packages/lucide-svelte
 
+https://lucide.dev/icons/ => food
+
 ```shell
 pi -D lucide-svelte
 ```

@@ -1,1 +1,10 @@
-<slot></slot><script>import "../app.css";</script><style></style>
+<script>
+	import Nav from '$lib/components/Nav.svelte';
+	import '../app.css';
+</script>
+
+<Nav></Nav>
+
+<slot></slot>
+
+<style></style>

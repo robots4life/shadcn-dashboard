@@ -20,7 +20,7 @@
 	#board {
 		display: grid;
 		grid-template-columns: max(200px, 10vw) 1fr;
-		height: 100vh;
+		height: calc(100vh - 4rem - 4px);
 	}
 	aside {
 		border-right: 2px solid black;

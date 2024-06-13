@@ -40,3 +40,7 @@ pi -D lucide-svelte
 ```shell
 px shadcn-svelte@latest add button
 ```
+
+<a href="http://localhost:5173/002">002</a>
+
+For <a href="http://localhost:5173/002">002</a> use <a href="https://www.shadcn-svelte.com/examples/forms">https://www.shadcn-svelte.com/examples/forms</a> as an example.

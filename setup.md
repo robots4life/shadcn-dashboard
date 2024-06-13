@@ -34,3 +34,7 @@ https://lucide.dev/guide/packages/lucide-svelte
 ```shell
 pi -D lucide-svelte
 ```
+
+```shell
+px shadcn-svelte@latest add button
+```

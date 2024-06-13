@@ -26,5 +26,5 @@ pi
 ```
 
 ```shell
-pnpm dlx shadcn-svelte@latest init
+px shadcn-svelte@latest init
 ```

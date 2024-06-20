@@ -85,10 +85,11 @@
 			<input hidden name={attrs.name} bind:value={$formData.email} />
 		</Form.Control>
 		<Form.Description>
-			You can manage verified email addresses in your <a href="/examples/forms">email settings</a>.
+			You can manage verified email addresses in your email settings.
 		</Form.Description>
 		<Form.FieldErrors />
 	</Form.Field>
+
 	<Form.Field {form} name="bio">
 		<Form.Control let:attrs>
 			<Form.Label>Bio</Form.Label>
@@ -99,6 +100,7 @@
 		</Form.Description>
 		<Form.FieldErrors />
 	</Form.Field>
+
 	<div>
 		<Form.Fieldset {form} name="urls">
 			<Form.Legend>URLs</Form.Legend>

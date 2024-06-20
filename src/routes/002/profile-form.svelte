@@ -1,4 +1,5 @@
-<script lang="ts" context="module">
+<!-- runs global per component -->
+<!-- <script lang="ts" context="module">
 	import { z } from 'zod';
 	export const profileFormSchema = z.object({
 		username: z
@@ -10,20 +11,27 @@
 		urls: z.array(z.string().url()).default(['https://shadcn.com', 'https://twitter.com/shadcn'])
 	});
 	export type ProfileFormSchema = typeof profileFormSchema;
-</script>
+</script> -->
 
 <script lang="ts">
 	import { type Infer, type SuperValidated, superForm } from 'sveltekit-superforms';
 	import SuperDebug from 'sveltekit-superforms';
 	import { zodClient } from 'sveltekit-superforms/adapters';
 	import { tick } from 'svelte';
-	import * as Form from '$lib/components/ui/form/index.js';
-	import * as Select from '$lib/components/ui/select/index.js';
-	import { Input } from '$lib/components/ui/input/index.js';
-	import { Button } from '$lib/components/ui/button/index.js';
-	import { Textarea } from '$lib/components/ui/textarea/index.js';
+
+	// import these from 1 import instead - make stuff a lot easier
+	// import * as Form from '$lib/components/ui/form/index.js';
+	// import * as Select from '$lib/components/ui/select/index.js';
+	// import { Input } from '$lib/components/ui/input/index.js';
+	// import { Button } from '$lib/components/ui/button/index.js';
+	// import { Textarea } from '$lib/components/ui/textarea/index.js';
+
+	import { Input, Button, Textarea, Select, Form } from '$lib/components/ui/index';
+
 	import { cn } from '$lib/utils.js';
 	import { browser } from '$app/environment';
+	//
+	import { profileFormSchema, type ProfileFormSchema } from '$lib/schema/productValidation';
 
 	export let data: SuperValidated<Infer<ProfileFormSchema>>;
 
